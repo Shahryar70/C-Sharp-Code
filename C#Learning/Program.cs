@@ -119,15 +119,15 @@ namespace C_Learning
             //}
 
             //🔹 4.Check if a Number is Positive, Negative, or Zero
-            int nuumber = 1;
-            if (nuumber > 0)
-            {
-                Console.WriteLine("The number is positive");
-            }
-            else
-            {
-                Console.WriteLine("the number is negative");
-            }
+            //int nuumber = 1;
+            //if (nuumber > 0)
+            //{
+            //    Console.WriteLine("The number is positive");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("the number is negative");
+            //}
             //🔹 5.Swap Two Numbers(Without Third Variable)
             Console.ReadLine();
         }
