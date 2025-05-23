@@ -129,20 +129,29 @@ namespace C_Learning
             //    Console.WriteLine("the number is negative");
             //}
             //🔹 5.Swap Two Numbers(Without Third Variable)
-            var swap1 = 10;
-            var swap2 = 50;
-            Console.WriteLine("Before swap swap1 = " + swap1 + " and swap2 = " + swap2);
-            swap1 = swap1 + swap2;
-            swap2 = swap1 - swap2;
-            swap1 = swap1 - swap2;
-   Console.WriteLine("After swap swap1 = " + swap1 + " and swap2 = " + swap2);
-
-
-
-
-
-            Console.WriteLine();
+            //         var swap1 = 10;
+            //         var swap2 = 50;
+            //         Console.WriteLine("Before swap swap1 = " + swap1 + " and swap2 = " + swap2);
+            //         swap1 = swap1 + swap2;
+            //         swap2 = swap1 - swap2;
+            //         swap1 = swap1 - swap2;
+            //Console.WriteLine("After swap swap1 = " + swap1 + " and swap2 = " + swap2);
+            //         Console.WriteLine();
+            //🔹 6.Leap Year Checker
+            Console.Write("Enter the year to check leap year: ");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if (year % 4 == 0 & year % 100 !=0 || year % 400 == 0)
+            {
+                Console.WriteLine($"leap year is {year}");
+            }
+            else
+            {
+                Console.WriteLine($" {year} is not a leap year");
+            }
             Console.ReadLine();
+           
+
+
         }
     }
 }
