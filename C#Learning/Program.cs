@@ -166,39 +166,42 @@ namespace C_Learning
             //Console.WriteLine(sum);
             //Console.ReadLine();
             // Q3. Factorial of a number (e.g., 5! = 5 × 4 × 3 × 2 × 1) using a while loop.
-            //Console.Write("Enter a number to calcluate the factorial: ");
-            //int factNum = Convert.ToInt32(Console.ReadLine());
-            //while(factNum > factNum-1)
-            //{
-            //    int factorial = 1;
-            //    for (int i =1; i<=factNum; i++)
-            //    {
-            //        factorial *= i;
-                  
-            //    }
-            //    Console.WriteLine($"Factorial of {factNum} is {factorial}");
-            
-            //}
-            // Q4. Check if a number is a prime number.
-            Console.Write("Enter a number to check it it is prime: ");
-            int primeNum = Convert.ToInt32(Console.ReadLine());
-            bool isPrime = true;
-            if(primeNum <= 1)
+            Console.Write("Enter a number to calcluate the factorial: ");
+            int factNum = Convert.ToInt32(Console.ReadLine());
+            int factorial = 1;
+            int i = 1;
+            while (i >= factNum)
             {
-                isPrime = false;
+                factorial *= i;
+                i++;
             }
-            else
-            {
-                for (int i= 2; i<=Math.Sqrt(primeNum); i++)
-                {
-                    if (primeNum % i == 0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
-                }
-            }
+            Console.WriteLine($"factorial of {factNum } number is {factorial}");
             Console.ReadLine();
+            // Q4. Check if a number is a prime number.
+            //Console.Write("Enter a number to check it it is prime: ");
+            //int primeNum = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i < primeNum; i++)
+            //{
+            //    if(primeNum <= 1)
+            //    {
+            //        Console.WriteLine($"{primeNum} is a invalid number");
+            //    }
+            //    else
+            //    {
+            //        if (primeNum % i == 0)
+            //        {
+            //            Console.WriteLine($"{primeNum} is not a prime number");
+
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine($"{primeNum} is a prime number");
+            //        }
+            //    }
+            //}
+            // Q5. Reverse a number (e.g., input: 1234, output: 4321) using a loop.
+
+
         }
     }
 }
