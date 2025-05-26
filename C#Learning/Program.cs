@@ -166,40 +166,40 @@ namespace C_Learning
             //Console.WriteLine(sum);
             //Console.ReadLine();
             // Q3. Factorial of a number (e.g., 5! = 5 × 4 × 3 × 2 × 1) using a while loop.
-            Console.Write("Enter a number to calcluate the factorial: ");
-            int factNum = Convert.ToInt32(Console.ReadLine());
-            int factorial = 1;
-            int i = 1;
-            while (i >= factNum)
-            {
-                factorial *= i;
-                i++;
-            }
-            Console.WriteLine($"factorial of {factNum } number is {factorial}");
-            Console.ReadLine();
-            // Q4. Check if a number is a prime number.
-            //Console.Write("Enter a number to check it it is prime: ");
-            //int primeNum = Convert.ToInt32(Console.ReadLine());
-            //for (int i = 1; i < primeNum; i++)
+            //Console.Write("Enter a number to calcluate the factorial: ");
+            //int factNum = Convert.ToInt32(Console.ReadLine());
+            //int factorial = 1;
+            //int i = 1;
+            //while (i >= factNum)
             //{
-            //    if(primeNum <= 1)
-            //    {
-            //        Console.WriteLine($"{primeNum} is a invalid number");
-            //    }
-            //    else
-            //    {
-            //        if (primeNum % i == 0)
-            //        {
-            //            Console.WriteLine($"{primeNum} is not a prime number");
+            //    factorial *= i;
+            //    i++;
+            //}
+            //Console.WriteLine($"factorial of {factNum } number is {factorial}");
 
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine($"{primeNum} is a prime number");
-            //        }
+            // Functions 
+            //1. PrintEvenNumbers() – prints even numbers from 1 to 50.
+            //void PrintEvenNumbers()
+            //{
+            //    int num = 50;
+            //    for(int i = 0; i <= num; i+=2)
+            //    {
+            //        Console.WriteLine(i);
             //    }
             //}
-            // Q5. Reverse a number (e.g., input: 1234, output: 4321) using a loop.
+            //PrintEvenNumbers();
+            //2. CalculateArea(double radius) – calculates and returns the area of a circle.
+            double CalculateArea()
+            {
+                Console.Write("Enter the radius for caluating area: ");
+                double radius = Convert.ToDouble(Console.ReadLine());
+                return Math.PI * radius * radius;
+            }
+            double area = CalculateArea();
+            Console.WriteLine(area);
+
+            Console.ReadLine();
+        
 
 
         }
