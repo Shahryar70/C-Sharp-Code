@@ -189,15 +189,28 @@ namespace C_Learning
             //}
             //PrintEvenNumbers();
             //2. CalculateArea(double radius) – calculates and returns the area of a circle.
-            double CalculateArea()
-            {
-                Console.Write("Enter the radius for caluating area: ");
-                double radius = Convert.ToDouble(Console.ReadLine());
-                return Math.PI * radius * radius;
+            //double CalculateArea()
+            //{
+            //    Console.Write("Enter the radius for caluating area: ");
+            //    double radius = Convert.ToDouble(Console.ReadLine());
+            //    return Math.PI * radius * radius;
+            //}
+            //double area = CalculateArea();
+            //Console.WriteLine(area);
+            //3. IsEligibleForVoting(int age) – checks if the person is 18 or older and returns a message.(int age) – checks if the person is 18 or older and returns a message.
+           string  IsEligibleForVoting() {
+                Console.Write("Enter your age to check if you are eligible for voting: ");
+                int age = Convert.ToInt32(Console.ReadLine());
+                if (age >= 18)
+                {
+                    return "You are eligible to vote";
+                }
+                else
+                {
+                    return "You are  not eligible to vote";
+                }
             }
-            double area = CalculateArea();
-            Console.WriteLine(area);
-
+            Console.WriteLine(IsEligibleForVoting());
             Console.ReadLine();
         
 
