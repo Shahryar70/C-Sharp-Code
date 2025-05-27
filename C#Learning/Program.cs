@@ -220,23 +220,27 @@ namespace C_Learning
             //Console.WriteLine($"Before calling method it was {number}");
             //Add(ref number);
             //Console.WriteLine($"After calling method it was {number}");try{try{
-            try
+            //try
+            //{
+            //    Console.WriteLine("Enter a number");
+            //    int number = Convert.ToInt32(Console.ReadLine()); ;
+            //}
+            //catch (FormatException ex)
+            //{
+            //    Console.WriteLine("Invalid output enter a number");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Execution completed");
+            //}
+            void SafeDivision()
             {
-                Console.WriteLine("Enter a number");
-                int number = Convert.ToInt32(Console.ReadLine()); ;
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine("Invalid output enter a number");
-            }
-            finally
-            {
-                Console.WriteLine("Execution completed");
+                Console.Write("Enter the 1st number: " );
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter the 2nd number: " );
+                int num = Convert.ToInt32(Console.ReadLine());
             }
             Console.ReadLine();
-         
-
-
         }
     }
 }
