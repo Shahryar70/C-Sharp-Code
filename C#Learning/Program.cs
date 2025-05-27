@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
@@ -251,21 +252,38 @@ namespace C_Learning
             //}
             //SafeDivision();
             //2. ParseAge() – Ask user to input age, handle FormatException if non-numeric value is entered.
-            void ParseAGe()
-            {
-                try
-                {
-                    Console.Write("Enter you age: ");
-                    int age = Convert.ToInt32(Console.ReadLine());
-                }
-                catch
-                {
-                    Console.WriteLine("Invalid digit enter enter a numerical value");
+            //void ParseAGe()
+            //{
+            //    try
+            //    {
+            //        Console.Write("Enter you age: ");
+            //        int age = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("Invalid digit enter enter a numerical value");
 
+            //    }
+
+            //}
+            //ParseAGe();
+            //3. ThrowIfNegative(int number) – Throw an exception if the number is negative.
+            void ThrowIfNegative()
+            {
+                
+                Console.Write("Enter the number");
+                int number = Convert.ToInt32(Console.ReadLine());
+                if (number < 0)
+                {
+                    throw new Exception("the number u entered is negative");
+                }
+                else
+                {
+                    Console.WriteLine("The number u entered is "+ number);
                 }
                 
             }
-            ParseAGe();
+            ThrowIfNegative();
             Console.ReadLine();
         }
     }
