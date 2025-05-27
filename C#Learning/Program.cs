@@ -233,13 +233,39 @@ namespace C_Learning
             //{
             //    Console.WriteLine("Execution completed");
             //}
-            void SafeDivision()
+            //1. SafeDivision() – Ask user to enter 2 numbers and handle divide-by - zero exception.
+            //void SafeDivision()
+            //{
+            //    Console.Write("Enter the 1st number: " );
+            //    int num1 = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Enter the 2nd number: " );
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //    try
+            //    {
+            //        Console.WriteLine(num1/num);
+            //    }
+            //    catch (DivideByZeroException ex)
+            //    {
+            //        Console.WriteLine("Division by 0 is not allowed");
+            //    }
+            //}
+            //SafeDivision();
+            //2. ParseAge() – Ask user to input age, handle FormatException if non-numeric value is entered.
+            void ParseAGe()
             {
-                Console.Write("Enter the 1st number: " );
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter the 2nd number: " );
-                int num = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    Console.Write("Enter you age: ");
+                    int age = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid digit enter enter a numerical value");
+
+                }
+                
             }
+            ParseAGe();
             Console.ReadLine();
         }
     }
