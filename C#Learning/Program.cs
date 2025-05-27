@@ -198,19 +198,19 @@ namespace C_Learning
             //double area = CalculateArea();
             //Console.WriteLine(area);
             //3. IsEligibleForVoting(int age) – checks if the person is 18 or older and returns a message.(int age) – checks if the person is 18 or older and returns a message.
-           //string  IsEligibleForVoting() {
-           //     Console.Write("Enter your age to check if you are eligible for voting: ");
-           //     int age = Convert.ToInt32(Console.ReadLine());
-           //     if (age >= 18)
-           //     {
-           //         return "You are eligible to vote";
-           //     }
-           //     else
-           //     {
-           //         return "You are  not eligible to vote";
-           //     }
-           // }
-           // Console.WriteLine(IsEligibleForVoting());
+            //string  IsEligibleForVoting() {
+            //     Console.Write("Enter your age to check if you are eligible for voting: ");
+            //     int age = Convert.ToInt32(Console.ReadLine());
+            //     if (age >= 18)
+            //     {
+            //         return "You are eligible to vote";
+            //     }
+            //     else
+            //     {
+            //         return "You are  not eligible to vote";
+            //     }
+            // }
+            // Console.WriteLine(IsEligibleForVoting());
 
             //void Add(ref int a)
             //{
@@ -219,9 +219,22 @@ namespace C_Learning
             //int number = 5;
             //Console.WriteLine($"Before calling method it was {number}");
             //Add(ref number);
-            //Console.WriteLine($"After calling method it was {number}");
+            //Console.WriteLine($"After calling method it was {number}");try{try{
+            try
+            {
+                Console.WriteLine("Enter a number");
+                int number = Convert.ToInt32(Console.ReadLine()); ;
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Invalid output enter a number");
+            }
+            finally
+            {
+                Console.WriteLine("Execution completed");
+            }
             Console.ReadLine();
-        
+         
 
 
         }
