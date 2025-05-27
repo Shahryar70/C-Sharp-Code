@@ -212,14 +212,14 @@ namespace C_Learning
            // }
            // Console.WriteLine(IsEligibleForVoting());
 
-            void Add(ref int a)
-            {
-                a += 10;
-            }
-            int number = 5;
-            Console.WriteLine($"Before calling method it was {number}");
-            Add(ref number);
-            Console.WriteLine($"After calling method it was {number}");
+            //void Add(ref int a)
+            //{
+            //    a += 10;
+            //}
+            //int number = 5;
+            //Console.WriteLine($"Before calling method it was {number}");
+            //Add(ref number);
+            //Console.WriteLine($"After calling method it was {number}");
             Console.ReadLine();
         
 
