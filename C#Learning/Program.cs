@@ -11,8 +11,91 @@ namespace C_Learning
 {
     internal class Program
     {
+     //   public class Person
+     //   {
+     //       private string name;
+     //       public string Name
+     //       {
+     //           get { return name; }
+     //           set { name = value; }
+     //       }
+     //       //Constuctor
+     //       public Person(string personName)
+     //       {
+     //           name = personName;
+
+     //       }
+     //       public void SayHello()
+     //       {
+     //           Console.WriteLine("Hello , my name is " + name);
+     //       }
+     //   }
+     //public struct Point
+     //   {
+     //       public int x;
+     //       public int y;
+     //       public Point(int x, int y)
+     //       {
+     //           this.x = x;
+     //           this.y = y;
+     //       }
+     //       public void Display()
+     //       {
+     //           Console.WriteLine($"Point is at ({x}, {y})");
+     //       }
+     //   }
+        public class Car
+        {
+            public string brand;
+            public int model;
+            public string Brand
+            {
+                get { return brand; }
+                set { brand = value; }
+            }
+            public int Model
+            {
+                get { return model; }
+                set { model = value; }
+            }
+            public Car(string brandOf, int modelOf)
+            {
+                brand = brandOf;
+                model = modelOf;
+
+            }
+            public void DisplayDetails()
+            {
+                Console.WriteLine($"Card brand is {brand} and modal is {model}");
+            }
+        }
+        public struct Rectangle
+        {
+            public double length;
+            public double width;
+                public Rectangle(double length, double width)
+            {
+                this.length = length;
+                this.width = width;
+            }
+            public double CalcluateArea()
+            {
+                return length * width;
+            }
+        }
         static void Main(string[] args)
         {
+
+            Car c = new Car("Honda", 2022);
+            c.DisplayDetails();
+            Rectangle r = new Rectangle(10.5, 8);
+            double area = r.CalcluateArea();
+            Console.WriteLine($"the area is {area}");
+            //Person p = new Person("Shahryar");
+            //p.SayHello();
+            //Point point = new Point(10, 20);
+            //point.Display();
+            Console.ReadLine();
             //Q2. Write a program that converts temperature from Celsius to Fahrenheit.
             //double celcius = 100;
             //double farheniet = celcius * 9/5 + 32;
@@ -270,7 +353,7 @@ namespace C_Learning
             //3. ThrowIfNegative(int number) – Throw an exception if the number is negative.
             //void ThrowIfNegative()
             //{
-                
+
             //    Console.Write("Enter the number");
             //    int number = Convert.ToInt32(Console.ReadLine());
             //    if (number < 0)
@@ -281,10 +364,13 @@ namespace C_Learning
             //    {
             //        Console.WriteLine("The number u entered is "+ number);
             //    }
-                
+
             //}
             //ThrowIfNegative();
-            Console.ReadLine();
+            // Field
+         
+    
         }
+
     }
 }
