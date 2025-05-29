@@ -44,53 +44,82 @@ namespace C_Learning
      //           Console.WriteLine($"Point is at ({x}, {y})");
      //       }
      //   }
-        public class Car
-        {
-            public string brand;
-            public int model;
-            public string Brand
-            {
-                get { return brand; }
-                set { brand = value; }
-            }
-            public int Model
-            {
-                get { return model; }
-                set { model = value; }
-            }
-            public Car(string brandOf, int modelOf)
-            {
-                brand = brandOf;
-                model = modelOf;
+        //public class Car
+        //{
+        //    public string brand;
+        //    public int model;
+        //    public string Brand
+        //    {
+        //        get { return brand; }
+        //        set { brand = value; }
+        //    }
+        //    public int Model
+        //    {
+        //        get { return model; }
+        //        set { model = value; }
+        //    }
+        //    public Car(string brandOf, int modelOf)
+        //    {
+        //        brand = brandOf;
+        //        model = modelOf;
 
+        //    }
+        //    public void DisplayDetails()
+        //    {
+        //        Console.WriteLine($"Card brand is {brand} and modal is {model}");
+        //    }
+        //}
+        //public struct Rectangle
+        //{
+        //    public double length;
+        //    public double width;
+        //        public Rectangle(double length, double width)
+        //    {
+        //        this.length = length;
+        //        this.width = width;
+        //    }
+        //    public double CalcluateArea()
+        //    {
+        //        return length * width;
+        //    }
+        //}
+
+        public class Student
+        {
+            private string name;
+            private int marks;
+            public string Name
+            {
+                get { return name; }
+                set { name = value; }
+            }
+            public int Marks
+            {
+                get { return marks; }
+                set { marks = value; }
             }
             public void DisplayDetails()
             {
-                Console.WriteLine($"Card brand is {brand} and modal is {model}");
-            }
-        }
-        public struct Rectangle
-        {
-            public double length;
-            public double width;
-                public Rectangle(double length, double width)
-            {
-                this.length = length;
-                this.width = width;
-            }
-            public double CalcluateArea()
-            {
-                return length * width;
+                if(marks > 100)
+                {
+                    Console.WriteLine($"Your name is {name} and your marks is {marks}");
+                }
+                else
+                {
+                    Console.WriteLine("Hidden data");
+                }
             }
         }
         static void Main(string[] args)
         {
-
-            Car c = new Car("Honda", 2022);
-            c.DisplayDetails();
-            Rectangle r = new Rectangle(10.5, 8);
-            double area = r.CalcluateArea();
-            Console.WriteLine($"the area is {area}");
+            Student student = new Student();
+            student.Name = "Shahryar";
+            student.Marks = 100;
+          //Car c = new Car("Honda", 2022);
+            //c.DisplayDetails();
+            //Rectangle r = new Rectangle(10.5, 8);
+            //double area = r.CalcluateArea();
+            //Console.WriteLine($"the area is {area}");
             //Person p = new Person("Shahryar");
             //p.SayHello();
             //Point point = new Point(10, 20);
