@@ -268,22 +268,22 @@ namespace C_Learning
             //}
             //ParseAGe();
             //3. ThrowIfNegative(int number) – Throw an exception if the number is negative.
-            void ThrowIfNegative()
-            {
+            //void ThrowIfNegative()
+            //{
                 
-                Console.Write("Enter the number");
-                int number = Convert.ToInt32(Console.ReadLine());
-                if (number < 0)
-                {
-                    throw new Exception("the number u entered is negative");
-                }
-                else
-                {
-                    Console.WriteLine("The number u entered is "+ number);
-                }
+            //    Console.Write("Enter the number");
+            //    int number = Convert.ToInt32(Console.ReadLine());
+            //    if (number < 0)
+            //    {
+            //        throw new Exception("the number u entered is negative");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The number u entered is "+ number);
+            //    }
                 
-            }
-            ThrowIfNegative();
+            //}
+            //ThrowIfNegative();
             Console.ReadLine();
         }
     }
