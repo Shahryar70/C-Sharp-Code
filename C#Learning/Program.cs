@@ -96,25 +96,35 @@ namespace C_Learning
             public int Marks
             {
                 get { return marks; }
-                set { marks = value; }
+                set {
+                    if (value >= 0 && value <= 100)
+                    {
+                        marks = value;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid marks. Must be between 0 and 100.");
+
+                    }
+                }
             }
             public void DisplayDetails()
             {
-                if(marks > 100)
-                {
+                
                     Console.WriteLine($"Your name is {name} and your marks is {marks}");
-                }
-                else
-                {
-                    Console.WriteLine("Hidden data");
-                }
+             
+                
             }
         }
         static void Main(string[] args)
         {
             Student student = new Student();
             student.Name = "Shahryar";
-            student.Marks = 100;
+            student.Marks = 90;
+            student.DisplayDetails();
+            student.Marks = 150; // Invalid will not  set
+            student.DisplayDetails();
+            Console.ReadLine();
           //Car c = new Car("Honda", 2022);
             //c.DisplayDetails();
             //Rectangle r = new Rectangle(10.5, 8);
